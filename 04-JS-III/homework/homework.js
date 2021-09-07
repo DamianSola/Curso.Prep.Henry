@@ -29,14 +29,14 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var array =[34,53,75];
+  var array =[34,53,75];//ejemplo
   var nuevoArray=[];
   for ( var i=0 ; i < array.length ; i++){
     nuevoArray[i]=array[i]+1;
   }
   return nuevoArray;
 }
-console.log(incrementarPorUno());
+//console.log(incrementarPorUno());
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
