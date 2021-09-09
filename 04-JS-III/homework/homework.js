@@ -42,14 +42,19 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  var array =[34,56,45];
+  array[array.length]=elemento;
+  return array;
 }
-
+//console.log(agregarItemAlFinalDelArray());
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshif(elemento);
+  return array;
 }
 
 
@@ -59,29 +64,48 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  return palabras.join(' ');
 }
-
+//console.log(dePalabrasAFrase(['hola','como','estas!']));
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for(let i=0; i<array.length; i++){
+    if ( array[i]===undefined){
+     return false;
+    }else{
+     return true;
+    }
+  }
 }
-
+//console.log(arrayContiene(['hola','', ,494]));
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var suma=0;
+  for(var i=0; i<numeros.length; i++){
+    suma= suma + numeros[i];
+  }
+  return suma;
 }
+//console.log(agregarNumeros([50,25,20,25]));
 
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var suma = 0;
+  for(i=0; i<resultadosTest.length; i++){
+    suma = suma + resultadosTest[i];
+  }
+  return Math.round(suma/i);
 }
-
+//console.log(promedioResultadosTest([6,8,7,8,5,6]))
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
