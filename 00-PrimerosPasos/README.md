@@ -12,7 +12,7 @@
 </table>
 
 ## Primeros Pasos
-
+prueba comit
 ### Preparando tu compu:
 
 Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparación:

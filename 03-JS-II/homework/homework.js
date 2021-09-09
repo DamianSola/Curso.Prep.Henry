@@ -5,28 +5,30 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y ){
-    console.log('el mayor es ',x);
+  if (x > y){
+    console.log(x+ ' es el mayor');
   }else if(x < y){
-    console.log('el mayor es ',y);
+    console.log(y+ ' es el mayor');
   }else{
-    console.log('son iguales')
+    console.log('son iguales ');
   }
-  return x,y;
+  return (x,y);
 }
+
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad >= 18){
-    console.log('Allowed');
+
+  if ( edad >= 18){
+    console.log('alowed');
   }else{
-    console.log('Not allowed');
+    console.log('Not alloded');
   }
-  return edad;
+  return edad.int; 
 }
-  
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -49,7 +51,7 @@ function saludo(idioma) {
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
-  // Tu código:
+  // Tu código: HEAD
   if (idioma === 'Aleman'){
     console.log('Guten Tag!');
   }else if(saludo === 'mandarin'){
@@ -60,6 +62,15 @@ function saludo(idioma) {
     console.log('hola');
   }
   return idioma
+  if (idioma === 'aleman'){
+    console.log('guten tag!');
+  }else if (idioma === 'mandarin'){
+    console.log('ni hao!');
+  }else if (idioma === 'ingles'){
+    console.log('hello!');
+  }else{
+    console.log('hola!')
+  }
 }
 
 function colors(color) {
@@ -113,7 +124,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
   if (numero === Math.floor(numero)){
+
     console.log(true);
   }else{
     console.log(false);
@@ -161,6 +174,7 @@ function operadoresLogicos(num1, num2, num3) {
   return num1,num2,num3;
 }
 
+
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
@@ -177,6 +191,7 @@ function esPrimo(numero) {
   }
   return numero;
 }
+
 
 
 function esVerdadero(valor){
