@@ -197,14 +197,34 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var nuevoArray = [];
+  for(var i=0; i<array.length; i++){
+    if(array[i]==='Enero' || array[i]==='Marzo' || array[i]==='Noviembre'){
+      nuevoArray.push(array[i]);
+    }
+  }
+  if(nuevoArray.length<3){
+    return 'No se encontraron los meses pedidos.';
+  }else{
+    return nuevoArray;
+  }
 }
+//console.log(mesesDelAño(['Enero','Febrero','Marzo','noviembre','Diciembre']))
 
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var nuevoArray = [];
+  for(var i=0 ; i < array.length; i++){
+    if(array[i] > 100){
+    nuevoArray.push(array[i]);
+    }
+  }
+  return nuevoArray;
 }
+//console.log(mayorACien([34,134,100,109,86,34]))
 
 
 function breakStatement(numero) {
@@ -215,7 +235,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var array = [];
+  for(var i=0; i<10; i++){
+    numero = numero+2;
+    if(numero ===i) break;
+    else{
+      array.push(numero);
+    }
+  }
+  if(i<10){
+    return 'Se interrumpió la ejecución.';
+  }else{
+  return array;
+  }
 }
+//console.log(breakStatement(5));
 
 
 function continueStatement(numero) {
@@ -225,8 +259,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array=[];
+  for(var i=0; i<10; i++){
+    if (i===5) continue;
+    else{
+      numero=numero+2;
+      array.push(numero);
+    }
+  }
+  return array;
 }
-
+//console.log(continueStatement(40));
 
 // No modificar nada debajo de esta línea
 // --------------------------------
