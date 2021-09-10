@@ -26,7 +26,7 @@ function mayoriaDeEdad(edad) {
   }else{
     console.log('Not alloded');
   }
-  return edad.int; 
+  return edad; 
 }
 
 function conection(status) {
@@ -62,15 +62,6 @@ function saludo(idioma) {
     console.log('hola');
   }
   return idioma
-  if (idioma === 'aleman'){
-    console.log('guten tag!');
-  }else if (idioma === 'mandarin'){
-    console.log('ni hao!');
-  }else if (idioma === 'ingles'){
-    console.log('hello!');
-  }else{
-    console.log('hola!')
-  }
 }
 
 function colors(color) {
